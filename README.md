@@ -13,6 +13,6 @@ Train, validation and test folders were then created, in compliance with Yolov5 
 
 ### Results:
 
-Training results after 50 epochs, with confidence at 0.4 and IOU at 0.5: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/train/exp3
+1. Training results after 50 epochs, with confidence at 0.4 and IOU at 0.5: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/train/exp3
 
-Detection of test images (3 images): https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
+2. Detection of test images (3 images): https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
