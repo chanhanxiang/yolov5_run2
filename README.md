@@ -17,6 +17,6 @@ Train, validation and test folders were then created, in compliance with Yolov5 
 
 2. Detection of test images (3 images): https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
 
-## Note:
+### Note:
 
 Files from yolov5 are not included in package, please download seperately when running ipynb
