@@ -19,33 +19,23 @@ Best performing training and test results are outlined below:
 
 <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/16b3f121-eda7-421f-af4c-a245f61bcbf1" width=40% height=40%>
 
+Person is detected with high confidence, but car is barely detected at 0.43.
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" width=40% height=40%>
+
+Jaywalker and car at mid-distance able to be detected, cars further down the road can be detected.
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" width=40% height=40%>
+
 From the Confusion matrix plot, pedestrians have the best true positive prediction rate of 0.93, while for cars it is more modest with a score of 0.69.
 
 More information at: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/train/exp3
 
 <h5>2. Detection of test images (3 images):</h5>
 
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/0bda7d7d-05cf-481d-ada4-c338116093d8" width=40% height=40%>
 
-<div style="display: flex; justify-content: space-between;">
-    <div style="width: 30%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d336e140-3e05-48c3-b679-8397d150e13a" style="max-width: 30%; height: auto; display: block;">
-        <div style="border: 1px solid #ccc; padding: 10px;">
-            <p style="text-align: center;">Person is detected with high confidence, but car is barely detected at 0.43</p>
-        </div>
-    </div>
-    <div style="width: 30%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" style="max-width: 30%; height: auto; display: block;">
-        <div style="border: 1px solid #ccc; padding: 10px;">
-            <p style="text-align: center;">Jaywalker and car at mid-distance able to be detected, cars further down the road can be detected</p>
-        </div>
-    </div>
-    <div style="width: 30%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/0bda7d7d-05cf-481d-ada4-c338116093d8" style="max-width: 30%; height: auto; display: block;">
-        <div style="border: 1px solid #ccc; padding: 10px;">
-            <p style="text-align: center;">Jogger is detected well, parked cars are also detected/p>
-        </div>
-    </div>
-</div>
+Jogger is detected well, parked cars are also detected.
 
 
 More information at: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
