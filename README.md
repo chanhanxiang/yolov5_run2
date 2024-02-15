@@ -25,18 +25,25 @@ More information at: https://github.com/chanhanxiang/yolov5_run2/tree/master/fro
 
 <h5>2. Detection of test images (3 images):</h5>
 
-<div style="display: flex; flex-direction: column; align-items: center;">
-    <div style="width: 33.33%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d336e140-3e05-48c3-b679-8397d150e13a" style="width: 100%; height: auto;">
-        <p style="text-align: center;">Person is detected with high confidence, but car is barely detected at 0.43</p>
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 30%;">
+        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d336e140-3e05-48c3-b679-8397d150e13a" style="max-width: 100%; height: auto; display: block;">
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <p style="text-align: center;">Person is detected with high confidence, but car is barely detected at 0.43</p>
+        </div>
     </div>
-    <div style="width: 33.33%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" style="width: 100%; height: auto;">
-        <p style="text-align: center;">Jaywalker and car at mid-distance able to be detected, cars further down the road can be detected</p>
+    <div style="width: 30%;">
+        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" style="max-width: 100%; height: auto; display: block;">
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <p style="text-align: center;">Jaywalker and car at mid-distance able to be detected, cars further down the road can be detected</p>
+        </div>
     </div>
-    <div style="width: 33.33%;">
-        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/0bda7d7d-05cf-481d-ada4-c338116093d8" style="width: 100%; height: auto;">
-        <p style="text-align: center;">Jogger is detected well, parked cars are also detected</p>
+    <div style="width: 30%;">
+        <img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/0bda7d7d-05cf-481d-ada4-c338116093d8" style="max-width: 100%; height: auto; display: block;">
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <p style="text-align: center;">Jogger is detected well, parked cars are also detected/p>
+        </div>
     </div>
 </div>
 
