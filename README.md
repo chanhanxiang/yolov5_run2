@@ -13,6 +13,55 @@ Train, validation and test folders were then created, in compliance with Yolov5 
 
 ### Results:
 
-Training results after 50 epochs, with confidence at 0.4 and IOU at 0.5: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/train/exp3
+Best performing training and test results are outlined below:
 
-Detection of test images (3 images): https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
+<h5>1. Training results after 50 epochs, with confidence at 0.4 and IOU at 0.5:</h5>
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/16b3f121-eda7-421f-af4c-a245f61bcbf1" width=40% height=40%>
+
+From the Confusion matrix plot, pedestrians have the best true positive prediction rate of 0.93, while for cars it is more modest with a score of 0.69.
+
+More information at: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/train/exp3
+
+
+
+<h5>2. Detection of test images (3 images):</h5>
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/3098c052-7751-4453-accd-78a7abc51c35" width=40% height=40%>
+
+Person is detected with high confidence, but car is barely detected at 0.43.
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/d34ec331-2e23-49a7-9a12-195c635156be" width=40% height=40%>
+
+Jaywalker and car at mid-distance able to be detected, cars further down the road can be detected.
+
+<img src="https://github.com/chanhanxiang/yolov5_run2/assets/107524953/0bda7d7d-05cf-481d-ada4-c338116093d8" width=40% height=40%>
+
+Jogger is detected well, parked cars are also detected.
+
+
+More information at: https://github.com/chanhanxiang/yolov5_run2/tree/master/from_yolo/runs/detect/exp3
+
+### Discussion:
+
+For this initial experiment, only setting of the confidence level, IOU and epochs are done with no hyperparameter tuning. The confidence scores of the detected objects are not very high for the best run, mostly in the range of 0.4 to 0.7. Nevertheless, the trained model is still able to detect cars and pedestrians correctly, which shows the robustness of Yolov5, which is even more true given that Yolo5s (small) model was used for the pre-trained layers.
+
+To get better confidence scores, the following can be done for subsequent experiements:
+
+- Use Yolo medium or larger size for better confidence scores, but this would require additional memory and training time. A useful discussion can be found here: https://github.com/ultralytics/yolov5#inference
+
+- Increase the number of training and validation samples
+
+- Perform appropriate hyperparameter tuning
+
+- Increase the number of training epochs up to 150 (can only give a modest improvement at best, useful discussion can be found at: https://www.mdpi.com/2076-3417/13/17/9748)
+
+Transfer learning of the entire Yolov5 model is not advisable, as it has been experimentally demonstrated that accuracy decreases by up to 5 percentage points between freezing the backbone versus freezing the entire Yolo model: https://github.com/ultralytics/yolov5/issues/1314
+
+### Conclusion:
+
+This exercise demonstrates a workable/passable object detection model using Transfer learning. To improve the model performance scores to 70%, which is required for industrial applications such as autonomous driving, one or more improvements listed above need to be attempted.
+
+### Note:
+
+Files from yolov5 are not included in package, please download seperately when running ipynb
